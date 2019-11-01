@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    margin: auto;
+   
+}
+
+#list{
+    border: 5px solid black
+}
+img{
+    height: 100px;
+}
+.header{
+    font-size: 50px;
+    border: 10px black solid
+}

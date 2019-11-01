@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="travelInfo">
+        <input type="text" placeholder="FirstName" name="firstName">
+        <input type="text" placeholder="LastName"  name="lastName">
+        <input type="number" placeholder="Age"  name="age">
+        <br>
+        <br>
+        Gender: 
+       Male <input value="male" name="gender" type="radio">
+       Female <input value="female" name="gender" type="radio">
+
+       <br>
+       <br>
+       Location of Travel <select name="location">
+           <option value="default" name= "destination"> Please Select</option>
+           <option value="New York" name="destination"> New York, NY</option>
+           <option value="Los Angeles" name="destination"> Los Angeles,CA </option>
+           <option value="Kentucky" name="destination"> Kentucky</option>
+           </select>
+        <br>
+        <br>
+        Select if Applicable:
+        Vegetarian<input value="vegetarian" name="food" type="checkbox">
+        Kosher <input value="kosher" name="food" type="checkbox">    
+        Lactose Free <input value="lactose free" name="food" type="checkbox">
+        <br>
+        <br>
+           <button id="submit">submit</button>
+    </form>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

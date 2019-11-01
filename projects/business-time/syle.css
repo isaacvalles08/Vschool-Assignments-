@@ -1,0 +1,56 @@
+.nav{
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: 1px solid black ;
+    border-radius: 8px;
+    
+}
+.moose{
+    height: 50px;
+    position: relative;
+    left: 80px
+}
+.search{
+    height: 10px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 10px;
+    box-shadow: 10px
+}
+.button{
+    position: relative;
+    left: 102px;
+    bottom: 18px;
+    border-radius: 10px
+}
+body{
+    background-image: url("./farm.jpg");
+    background-repeat: no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.navtag{
+    color: black;
+}
+.footer{
+    height: 800px;
+    width:100%;
+    border: 2px solid black;
+    padding: 3px;
+    position: relative;
+    top: 675px;
+    right: 5px;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 3px
+}

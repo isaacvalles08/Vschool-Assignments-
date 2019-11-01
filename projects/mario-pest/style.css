@@ -1,0 +1,21 @@
+img{
+width: 150px;
+height: 330px;
+align-self: center
+}
+h1{
+    text-align: center
+}
+form{
+    position: relative;
+    background-image: url('Assets/mario background.png')
+}
+header{
+    text-align: center;
+    font-size: 30px
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px
+}

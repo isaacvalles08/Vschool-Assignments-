@@ -1,0 +1,49 @@
+{
+    "appetizers": [
+        {
+            "Fried Pickles": ["pickles, batter, oil"],
+            "Friend Pickles description":"dill pickle fried in 100% peanut oil, served with a side of fry sauce",
+            "Hot Wings":["100% all white meat chicken, homemade buffalo sauce, ranch"],
+            "Hot Wings descriptions":["12 hot and steamy delicious wings that come with 3 sides of ranch"]
+        }
+    ],
+    "cold sandwhiches": [
+          {
+            "BLT": ["bacon, lettuce, tomato"],
+            "BLT Description":["our signiture sandwhich, an old timer favorite"],
+            "Turkey Club":["bacon, turkey, lettuce, spicy mayo"],
+            "TC Description":["new menu item, our employees voted it as the best sandwhich we have"]
+
+          }  
+    
+    ],
+    "hot sandwhiches":[
+        {
+            "name": "philly",
+            "ingredients":["flank steak, cheese whiz, peppers, onions, french bread, fry sauce" ],
+            "Description": ["classic philly with a Utah twist"],
+            "Pname": "Grilled Cheese",
+            "GC Ingredients":["american cheese, provalone, cheddar"],
+            "GC Description":["our grilled cheese is great for kids, but can fill an adult if he/she is not that hungry"]
+        
+        }
+    ],
+    "desserts": [
+        {
+            "ice cream": ["milk, cream, and nuts"],
+            "Ice cream Description":["classic ice cream, great to end a good date on"],
+            "chocolate cake":["milk, eggs, flour, chocolate syrup "],
+            "CC description":["our most ordered dessert on the menu since there are only two choices lol"]
+        }
+    ],
+    "drinks":[
+        {
+            "Coke Products":["sprite, coke, diet coke"],
+            "Drink Description":["great refresher after a day in the hot sun."],
+            "lemonade":["lemons, water, sugar"],
+            "Lemonade Description":["one of our signiture recipes that will have you smackin' your lips"]
+        }
+    ]
+
+
+}
