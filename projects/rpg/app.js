@@ -8,9 +8,9 @@ function Enemy (name, healthPoints, attackPoints){
 }
 
 
-const countDuku = new Enemy('Count Duku', 500, 50)
+const countDuku = new Enemy('Count Duku', 1000, 50)
 const darthSidious = new Enemy('Darth Sidious', 1000, 75)
-const darthMaul = new Enemy('Darth Maul', 700, 75)
+const darthMaul = new Enemy('Darth Maul', 1000, 75)
 const darkEnemies = [countDuku, darthMaul, darthSidious]
 
 
@@ -22,7 +22,7 @@ function Jedi(name, healthPoints, attackPoints){
     this.attackPoints = attackPoints;
 }
 const luke = new Jedi('Luke', 500, 100)
-console.log('Hello how are you, welcome to Star Wars')
+console.log('Hello how are you? welcome to Star Wars')
 const name = ask.question('What is your name? ')
 console.log(`Welcome to the game ${name}, Your journey is about to begin`)
 
@@ -40,9 +40,6 @@ while(isAlive && !hasWon){
         console.log('You quit the game')
     }
 }
-
-
-
 
 
 
@@ -77,8 +74,12 @@ function run(){
     const runAway = Math.floor(Math.random() * 3)
     if(runAway === 2){
     console.log('You got away')
-} else {
-    fight()
+        } else {
+            fight()
 
+ } 
+function enemyttack(){
+    
 }
+
 }

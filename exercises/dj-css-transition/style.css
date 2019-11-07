@@ -1,0 +1,80 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 5px;
+    background-color: black;
+    border: 5px solid black;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+
+}
+.container1{
+    background-color:blue;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+.container2{
+    background-color: green;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+.container3{
+    grid-column: 3 / -1;
+    background-color: yellow;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+.container4{
+    background-color: purple;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+.container5{
+    background-color: pink;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+.container6{
+    background-color: firebrick;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    grid-column: 3 / -1
+}
+.container1:hover{
+    background-color: purple;
+    width: 300px;
+    border-radius: 10px;
+}
+.container2:hover{
+    background-color: pink;
+    width: 300px;
+    border-radius: 10px
+}
+.container3:hover{
+    background-color: firebrick;
+    width: 300px;
+    border-radius: 10px
+}
+.container4:hover{
+    background-color: blue;
+    width: 300px;
+    border-radius: 10px
+}
+.container5:hover{
+    background-color: green;
+    width: 300px;
+    border-radius: 10px
+}
+.container6:hover{
+    background-color: yellow;
+    grid-column: 3 / -1;
+    width: 300px;
+    border-radius: 10px
+}

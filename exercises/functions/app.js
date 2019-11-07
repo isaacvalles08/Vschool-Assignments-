@@ -128,19 +128,19 @@
 // } console.log(myFunc('hello sir how are you doing on this fine monday morning'))
 
 
-// function problem(string){
-//     if(string.length <= 20){
-//         return string + string
-//     }else{
-//         let newStr = string.length / 2
-//         let endStr = string.slice(0, newStr)
-//         return endStr
-//     }
+function problem(string){
+    if(string.length <= 20){
+        return string + string
+    }else{
+        let newStr = string.length / 2
+        let endStr = string.slice(0, newStr)
+        return endStr
+    }
 
-// }
-// console.log(problem('hello how are you doing on this fine monday'))
+}
+console.log(problem('hello how are you doing on this fine monday'))
 
-// function challenge(n){
+function challenge(n){
     
 // }
 

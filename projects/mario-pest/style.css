@@ -1,6 +1,6 @@
 img{
-width: 150px;
-height: 330px;
+width: 100px;
+height: 150px;
 align-self: center
 }
 h1{
@@ -18,4 +18,12 @@ footer{
     text-align: center;
     font-size: 15px;
     margin: 10px
+}
+
+body{
+    background-color: black;
+    color: white
+}
+#submit{
+    background-color: white
 }
