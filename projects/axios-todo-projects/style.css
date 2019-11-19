@@ -5,12 +5,25 @@ body{
 }
 
 #list{
-    border: 5px solid black
+    border: 1px solid black;
+    padding: 5px;
 }
 img{
     height: 100px;
 }
 .header{
     font-size: 50px;
-    border: 10px black solid
+    border: 5px black solid;
+    margin: 3px;
+    padding: 3px
+}
+body{
+    background-color: antiquewhite
+}
+#add-button{
+    border: black solid;
+    border-radius: 10px
+}
+#add{
+    border: 1px
 }

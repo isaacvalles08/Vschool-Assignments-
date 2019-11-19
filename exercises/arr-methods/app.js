@@ -52,3 +52,4 @@ const vegetables = ["carrot", "tomato", "pepper", "lettuce"]
     // const joinFoodString = food.join()
 
     // console.log(joinFoodString)
+    

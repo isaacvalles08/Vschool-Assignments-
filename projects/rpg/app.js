@@ -1,85 +1,92 @@
 const ask = require('readline-sync')
-let isAlive = true;
-let hasWon = false;
-function Enemy (name, healthPoints, attackPoints){
+
+let isAlive = true
+let hasWon = false
+
+function Enemy(name, hp, ap){
     this.name = name;
-    this.healthPoints = healthPoints;
-    this.attackPoints = attackPoints;
+    this.hp = hp;
+    this.ap = ap;
 }
+    
+const darthVader = new Enemy('Darth Vader', 100, 50)
+const darthMaul = new Enemy('Darth Maul', 100, 50)
+const darthSidious = new Enemy('Darth Sidious', 110, 75)
+const enemyArr = [darthVader, darthMaul, darthSidious]
+    
 
 
-const countDuku = new Enemy('Count Duku', 1000, 50)
-const darthSidious = new Enemy('Darth Sidious', 1000, 75)
-const darthMaul = new Enemy('Darth Maul', 1000, 75)
-const darkEnemies = [countDuku, darthMaul, darthSidious]
-
-
-
-
-function Jedi(name, healthPoints, attackPoints){
+function Hero(name, hp, ap){
     this.name = name;
-    this.healthPoints = healthPoints;
-    this.attackPoints = attackPoints;
+    this.hp = hp;
+    this.ap = ap;
 }
-const luke = new Jedi('Luke', 500, 100)
-console.log('Hello how are you? welcome to Star Wars')
-const name = ask.question('What is your name? ')
-console.log(`Welcome to the game ${name}, Your journey is about to begin`)
+const hero = new Hero('Luke', 150, 75)
 
-
-
-
+console.log(`Hello ${hero.name}, it is nice to meet you`)
 while(isAlive && !hasWon){
-    let choice = ask.keyIn('Would you like to (w) Walk, (i) Check Inventory, or (q) Leave Game? ', {limit: 'wiq'} )
-    if(choice === 'w'){
+    const action = ask.keyIn("Would you like to walk [w], check inventory [i], or quit[q]? ", {limit: 'wiq'})
+    if(action === 'w'){
         walk()
-    }else if (choice === 'i'){
-       printInventory()
-    }else {
+    }else if(action === 'i'){
+        checkInventory()
+    }else if(action === 'q'){
         isAlive = false
-        console.log('You quit the game')
+        console.log('You have quit the game. The Dark side has won')
     }
+
 }
 
-
-
-
-
-function walk (){
-    let random = Math.floor(Math.random()*4)
+function walk(){
+    const random = Math.floor(Math.random() * 4)
     if(random === 3){
-        enemyEncounter()
+        enemyOccurs()
+       action = ask.keyIn('Would you like to fight [f] use item [i] or run away? [r] ',{limit: 'fir'} )
+        if(action === 'f'){
+            fight()
+        }else if(action === 'i'){
+            useItem()
+        }else if(action === 'r'){
+            run()
+        }
     }else{
-        console.log('You continue walking safely')
+        console.log('you continue walking safely')
     }
 }
-function enemyEncounter(){
-    const currEnemy = selectEnemy()
-    let choice = ask.keyIn(`You encountered ${currEnemy.name}! Would you like to [a] Attack, [r] Run, or [q] Quit`, {limit: 'arq'})
-    if(choice === 'a'){
-        fight()
-    }else if (choice === 'r'){
-        run()
-    }else{
-        isAlive = false
-        console.log('You are a Quiter')
-    }
+
+function enemyOccurs(){
+    const randomIndex = Math.floor(Math.random() * enemyArr.length)
+    const enemy = enemyArr[randomIndex]
+    console.log(enemy)
+
 }
-function selectEnemy(){
-    let random = Math.floor(Math.random()*darkEnemies.length)
-    return darkEnemies[random]
+
+
+function fight(){
+    heroAttack()
+    enemyAttack()
+}
+
+function useItem(){
+    
 }
 
 function run(){
-    const runAway = Math.floor(Math.random() * 3)
-    if(runAway === 2){
-    console.log('You got away')
-        } else {
-            fight()
-
- } 
-function enemyttack(){
-    
+    const random = Math.floor(Math.random() * 4)
+    if(random === 3){
+        console.log('You got away safely')
+    }else{
+        fight()
+    }
 }
+
+function heroAttack(){
+    randomAttack = Math.floor(Math.random() + hero.ap)
+    if(randomAttack > enemy.hp){
+        enemyArr.splice()
+    }
+}
+
+function enemyAttack(){
 
 }
