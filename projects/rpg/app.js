@@ -2,6 +2,7 @@ const ask = require('readline-sync')
 
 let isAlive = true
 let hasWon = false
+let hasKey = false
 
 function Enemy(name, hp, ap){
     this.name = name;
@@ -24,7 +25,7 @@ function Hero(name, hp, ap){
 const hero = new Hero('Luke', 150, 75)
 
 console.log(`Hello ${hero.name}, it is nice to meet you`)
-while(isAlive && !hasWon){
+while(isAlive && !hasWon && !hasKey){
     const action = ask.keyIn("Would you like to walk [w], check inventory [i], or quit[q]? ", {limit: 'wiq'})
     if(action === 'w'){
         walk()
@@ -40,10 +41,10 @@ while(isAlive && !hasWon){
 function walk(){
     const random = Math.floor(Math.random() * 4)
     if(random === 3){
-        enemyOccurs()
+      const  enemy = enemyOccurs()
        action = ask.keyIn('Would you like to fight [f] use item [i] or run away? [r] ',{limit: 'fir'} )
         if(action === 'f'){
-            fight()
+            fight(enemy)
         }else if(action === 'i'){
             useItem()
         }else if(action === 'r'){
@@ -58,17 +59,16 @@ function enemyOccurs(){
     const randomIndex = Math.floor(Math.random() * enemyArr.length)
     const enemy = enemyArr[randomIndex]
     console.log(enemy)
-
+    return enemy
 }
 
 
-function fight(){
-    heroAttack()
-    enemyAttack()
+function fight(enemy){
+    heroAttack(enemy)
 }
 
-function useItem(){
-    
+function checkInventory(){
+    console.log(``)
 }
 
 function run(){
@@ -76,17 +76,27 @@ function run(){
     if(random === 3){
         console.log('You got away safely')
     }else{
-        fight()
+        enemyAttack()
     }
 }
 
-function heroAttack(){
-    randomAttack = Math.floor(Math.random() + hero.ap)
+function heroAttack(enemy){
+    const randomAttack = Math.floor(Math.random() + hero.ap)
     if(randomAttack > enemy.hp){
-        enemyArr.splice()
+        const index = enemyArr.findIndex(function(badGuy){
+            return badGuy.name === enemy.name
+        })
+        enemyArr.splice(index, 1)
     }
+    console.log('You have killed a Sith')
+    console.log('The sith dropped a key')
+    
 }
 
-function enemyAttack(){
-
+function enemyAttack(enemy){
+    const randomAttack = Math.floor(Math.random() + enemy.ap)
+    if(randomAttack > hero.hp){
+        console.log('You have died.')
+        isAlive = false
+    }
 }

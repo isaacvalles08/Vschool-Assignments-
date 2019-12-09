@@ -1,0 +1,20 @@
+body {
+    background-color: salmon;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center
+}
+
+h1 {
+    color: black;
+}
+.new-h1{
+    color: gold;
+}
+div {
+    color: paleturquoise;
+}
+.special-div {
+    color:paleturquoise;
+ 
+}
+

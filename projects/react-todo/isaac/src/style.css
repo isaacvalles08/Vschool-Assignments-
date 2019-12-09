@@ -1,0 +1,28 @@
+.formStyle{
+    background-color: whitesmoke;
+    margin: 0px;
+    
+
+
+}
+body{
+    margin: 0px;
+    text-align: center;
+}
+
+.toDo-item{
+    background-color: aliceblue;
+    height: 85px;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 0;
+    border-bottom: 1px solid #cecece;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+    margin: 0px
+
+}
