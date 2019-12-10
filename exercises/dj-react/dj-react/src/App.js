@@ -11,6 +11,11 @@ class App extends React.Component{
         this.setState(() =>{
            return {colors: ['black', 'black', 'black', 'black']}
         })  
+    }
+        changeColorBack = () => {
+            this.setState(() => {
+                return {colors: ['purple', 'purple', 'white', 'white']}
+            })
        
     }
     render(){
@@ -18,6 +23,7 @@ class App extends React.Component{
         return <div className='place'>
             {colors}
             <button className='button1' onClick={this.colorChange}>Change Color</button>
+            <button className='button2' onClick={this.changeColorBack}>Change Back</button>
         </div>
     }
 }
