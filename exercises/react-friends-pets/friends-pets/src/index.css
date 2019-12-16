@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.friends{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  height: 300px;
+  width: 200px;
+ 
+}
+
+.pets{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+}

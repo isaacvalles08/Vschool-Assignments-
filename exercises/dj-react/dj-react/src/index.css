@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -26,5 +25,7 @@ code {
   width: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:  100px 100px
+  grid-template-rows:  100px 100px;
+   
+  
 }

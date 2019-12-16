@@ -41,20 +41,20 @@
 
 
 
-// const realAnimals = ["dog", "cat", "mouse"];
-// const magicalAnimals = ["jackolope"];
-// const mysteriousAnimals = ["platypus" ];
-// function combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals) {  
-//     const allAnimals = [...realAnimals, ...magicalAnimals, ...mysteriousAnimals]
-//     return allAnimals
-// }
-// console.log(combineAnimals(realAnimals,magicalAnimals,mysteriousAnimals))
+const realAnimals = ["dog", "cat", "mouse", "deer"];
+const magicalAnimals = ["jackolope"];
+const mysteriousAnimals = ["platypus" ];
+function combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals) {  
+    const allAnimals = [...realAnimals, ...magicalAnimals, ...mysteriousAnimals]
+    return allAnimals
+}
+console.log(combineAnimals(realAnimals,magicalAnimals,mysteriousAnimals))
 
 
-// let numbers = [a,b,c,d,e];
-// function product(...numbers) {  
-//   return numbers.reduce((acc, number) => {
-//       return acc * number;
-//     }, 1)
-//   }
+let numbers = [a,b,c,d,e];
+function product(...numbers) {  
+  return numbers.reduce((acc, number) => {
+      return acc * number;
+    }, 1)
+  }
 

@@ -3,9 +3,10 @@ import React from 'react'
 
 function Pet(props){
     return(
-        <div>
-          <h1>{props.name}</h1>
-          <h2>{props.breed}</h2>
+        <div className='pets'>
+           <ul>
+              <h1>{props.name}, {props.breed}</h1>
+          </ul>
         </div>
 
     )

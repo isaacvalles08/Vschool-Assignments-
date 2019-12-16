@@ -9,7 +9,7 @@ function Spot(props){
     }else{
         dollars = "$$$"
     }
-    
+   
     return  <div className= 'vacation'>
                 <h1 >{props.place}</h1>
                 <p>{props.time}</p>

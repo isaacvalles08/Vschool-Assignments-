@@ -3,9 +3,8 @@ import Pet from './Pet'
 
 function Friend(props){
     const pets = props.pets.map(pet => <Pet name={pet.name} breed={pet.breed} />)
-return <div>
-    <h1>{props.name}</h1>
-    <p>{props.age}</p>
+return <div className='friends'>
+    <h1>{props.name} - {props.age}</h1>
     <h4>{pets}</h4>
     </div>
 
