@@ -1,0 +1,57 @@
+body{
+  text-align: center;
+  margin: 0
+}
+.nameBadge{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px
+}
+.textArea{
+  grid-column: 1/-1;
+
+}
+.container{
+  height: 350px;
+  width: 80%;
+  margin: auto;
+  border: 5px solid black;
+  padding: 15px;
+  border-radius: 10px
+}
+.form{
+  margin: none;
+  padding: 10px
+}
+.button{
+  grid-column: 1/-1;
+  margin: 10px;
+}
+.container2{
+  height: 450px;
+  width: 80%;
+  margin: auto;
+  border: 5px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 10px;
+  text-align:left;
+  padding: 30px
+}
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 100px 100px 100px 100px;
+}
+.name{
+  grid-column: 1/2;
+}
+.area{
+  grid-row: 4/5;
+  grid-column: 1/-1;
+}
+
+.submit{
+  grid-column: 1/-1
+}
